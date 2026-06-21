@@ -3,11 +3,11 @@
   "id": "com.rightfix.acodetmux",
   "name": "Tmux",
   "main": "main.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": "https://github.com/RightFix/tmux-acode.git",
   "icon": "icon.png",
   "license": "MIT",
-  "keywords": ["tmux", "alpine", "linux", "installer", "teminal", "coding", "development"],
+  "keywords": ["tmux", "alphine", "linux", "installer", "terminal", "coding", "development"],
   "price": 0,
   "permissions": ["file:read", "terminal", "internet"],
   "author": {

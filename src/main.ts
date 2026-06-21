@@ -115,7 +115,7 @@ class OpenCodeAlpinePlugin {
         if (editorView.state?.doc?.toString) {
           alert('Tmux Terminal', 'Terminal active but no file path. Using default directory.');
           const term = await terminal.create({ name: 'Tmux' });
-          await terminal.write(term.id, "apt install tmux\r\n");
+          await terminal.write(term.id, "apk add  tmux\r\n");
           await terminal.write(term.id, "tmux\r\n");
           return;
         }
@@ -123,7 +123,7 @@ class OpenCodeAlpinePlugin {
       
       if (!filePath) {
         const term = await terminal.create({ name: 'Tmux' });
-        await terminal.write(term.id, "apt install tmux\r\n");
+        await terminal.write(term.id, "apk add tmux\r\n");
         await terminal.write(term.id, "tmux\r\n");  
         return;
       }
